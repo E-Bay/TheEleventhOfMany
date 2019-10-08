@@ -1,1 +1,15 @@
-
+select, append, text,style
+<html>
+<body>
+<h1>Select</h1>
+    <p>Select takes an element and will look for the same element in the DOM. So if we wanted it to select the "body" element as seen in the example in the book we would type <b>"d3.select("body")..."</b></p>
+<h1>Append</h1>
+    <p>Append creates a new element and places it inside the element chosen in the "select" part mentioned above. So if we wanted to create a new header in the body we would put <b>"d3.select("body").append("head")..."</b></p>
+<h1>Text</h1>
+    <p>Text is pretty obvious as to what exactly it does. It takes some text and puts it into the appended element. As the book says, it specifically takes a "string and inserts it." So if we wanted to add the words "Hello World" into our header as mentioned before we would put <b>"d3.select("body").append("head").text("Hello World")"</b></p>
+<h1>Style</h1>
+    <p>In the simplest terms, you could say Style just applies CSS properties to the selections put in the "select" part of our d3 code. So if we wanted to make something green we would just put <b>"...style("color", "green")"</b>. We can do this with any CSS properties we have learned.</p>
+<h1>Extra's</h1>
+    <p>We can also use these elements inside functions to do different things if certain features are met. For example, in the book they use the example of an element being greater than 15. If the number was 15 it would be red, but black if it was not.</p>
+</body>
+</html>
